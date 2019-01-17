@@ -11,7 +11,7 @@ exports.up = function(knex, Promise) {
       .unsigned()
       .references("id")
       .inTable("ingredients");
-    table.string("quantity", 255);
+    table.float("quantity");
     table
       .index(["recipe_id", "ingredients_id"])
       .unique(["recipe_id", "ingredients_id"]);
