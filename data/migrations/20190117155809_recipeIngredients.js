@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
       .integer("recipe_id")
       .unsigned()
       .references("id")
-      .inTable("recipe");
+      .inTable("recipes");
     table
       .integer("ingredients_id")
       .unsigned()

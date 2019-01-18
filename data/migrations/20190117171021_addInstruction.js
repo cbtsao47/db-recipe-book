@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     table
       .integer("recipe_id")
       .references("id")
-      .inTable("recipe");
+      .inTable("recipes");
   });
 };
 
